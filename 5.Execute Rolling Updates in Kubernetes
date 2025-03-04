@@ -1,0 +1,12 @@
+You don’t learn to walk by following rules. You learn by doing, and falling over.
+
+An application currently running on the Kubernetes cluster employs the nginx web server. The Nautilus application development team has introduced some recent changes that need deployment. They've crafted an image nginx:1.19 with the latest updates.
+
+
+Execute a rolling update for this application, integrating the nginx:1.19 image. The deployment is named nginx-deployment.
+
+Ensure all pods are operational post-update.
+
+
+---> kubectl set image deploy nginx-deployment nginx-container=nginx:1.19
+---> kubectl set image deploy nginx-deployment(Deploymentname) nginx-container(Conatinername)=nginx:1.19(Imagename)
